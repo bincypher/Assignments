@@ -10,6 +10,7 @@
        - Tablet: Stacked layout with full-width sections
        - Mobile: Simplified single-column layout */
     .dashboard {
+        display: flex;
     }
 
     .sidebar {
@@ -19,22 +20,46 @@
     }
 
     .main-content {
+        width: 400px;
+        flex-grow: 1; 
+        flex-shrink: 1; 
         padding: 20px;
+
     }
 
     .stats {
+        display: flex;
+        gap: 20px;
         margin-bottom: 20px;
+
     }
 
     .stat-item {
+        width: 200px; 
+        flex-grow: 1; 
+        flex-shrink: 1;
         padding: 15px;
         background-color: #e0e0e0;
+
     }
 
     @media (max-width: 1024px) {
+        .dashboard {
+            flex-direction: column; 
+        }
+        .sidebar {
+            width: 100%; 
+        }
     }
 
     @media (max-width: 600px) {
+        .stats {
+            flex-direction: column; 
+        }
+        .stat-item {
+            width: 100%; 
+        }
+
     }
 </style>
 </head>
