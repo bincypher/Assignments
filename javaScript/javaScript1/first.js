@@ -16,3 +16,11 @@ let musk = 500_000_000_000;
 let ambani = 400_000_000_000;
 musk = musk + 100_000_000_000;
 console.log(musk + ambani);
+
+// console.log(y); // ReferenceError: y is not defined
+var x;
+console.log(x); // undefined
+
+let arr = [1,2,3,4];
+arr.reverse();
+console.log(arr); // [ 4, 3, 2, 1 ]
